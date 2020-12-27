@@ -54,7 +54,7 @@ mkfs.ext4 -L "ROOT" "${DISK}2"
 
 # mount target
 mkdir /mnt
-mount -t ext4 "${DISK}2" /mnt
+mount -t btrfs "${DISK}2" /mnt
 mkdir /mnt/boot
 mkdir /mnt/boot/efi
 mount -t vfat "${DISK}1" /mnt/boot/
